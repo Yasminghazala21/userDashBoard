@@ -1,0 +1,34 @@
+.search-filter {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-filter input {
+  flex: 2;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.search-filter input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.search-filter select {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.search-filter select:focus {
+  border-color: #007bff;
+  outline: none;
+}

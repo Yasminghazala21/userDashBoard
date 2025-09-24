@@ -1,0 +1,86 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  cursor: pointer;
+}
+
+th:last-child, td:last-child {
+  cursor: default;
+}
+
+tbody tr:hover {
+  background-color: #eaf3ff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 7px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn.warning {
+  background-color: #ffc107;
+  color: #422b00;
+}
+
+.btn.warning:hover {
+  background-color: #cc9a06;
+}
+
+.btn.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn.danger:hover {
+  background-color: #8b1a20;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tbody tr {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ddd;
+  }
+  td {
+    padding-left: 50%;
+    position: relative;
+    text-align: right;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555;
+  }
+}
