@@ -27,6 +27,7 @@ This project uses modular React components with component-scoped CSS for clean, 
 
 ## Folder Structure
 
+```
 src/
 ├── components/
 │ ├── UserTable.js
@@ -41,6 +42,7 @@ src/
 ├── App.js
 ├── index.css
 └── index.js
+```
 
 ---
 
