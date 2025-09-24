@@ -52,23 +52,27 @@ src/
    Download and install the latest LTS version from [https://nodejs.org/en/download](https://nodejs.org/en/download).
 
 2. **Create React App & Project Folder**  
-   Open your terminal and run:  
+   Open your terminal and run:
+   ```
     npx create-react-app user-dashboard
     cd user-dashboard
+   ```
 
-
-3. **Add Component and Service Files**  
-    Create the necessary folders inside `src`:  
+4. **Add Component and Service Files**  
+    Create the necessary folders inside `src`:
+   ``` 
      mkdir src/components src/services
-
+   ```
      Add the provided `.js` and `.css` files into the `components` folder and the mock data into `services`.
 
-4. **Update App.js**  
+6. **Update App.js**  
     Replace the default `App.js` content with the project code connecting components and mock data.
 
-5. **Run the Project**  
-    Start your React development server with:  
+7. **Run the Project**  
+    Start your React development server with:
+   ```
      npm start
+   ```
      This will open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
